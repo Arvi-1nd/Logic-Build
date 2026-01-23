@@ -36,3 +36,22 @@ try:
     print(sum_naturals(0))
 except ValueError:
     print("Value must be positive")
+    
+# sum of squares og natural numbers
+
+def sumSquares(n):
+    return sum(x**2 for x in range(n+1))
+    
+nos = 10
+print(sumSquares(nos))
+    
+# swapping two variables
+
+def swapTwoVariables(a,b):
+    a,b = b,a
+    return a,b
+
+swapTwo = lambda a,b : (b,a)
+
+print(swapTwoVariables(3,4))
+print(swapTwo(8,9))
