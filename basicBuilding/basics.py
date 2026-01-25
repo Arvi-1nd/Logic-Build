@@ -85,3 +85,29 @@ def getOppFace(n):
 print(getOppFace(1))
 print(getOppFace(4))
 
+#Nth Term of Ap
+
+def findNthTerm(a1,a2,n):
+    nthterm = a1
+    d = a2 - a1
+    for i in range(1,n):
+        nthterm += d
+    return nthterm
+
+#using formula
+
+def nthTerm(a1,a2,n):
+    return a1 +(n-1) * (a2-a1)
+
+
+
+a1 = 5
+a2 = 3
+n = 19
+
+print(findNthTerm(a1,a2,n))
+print(nthTerm(a1,a2,n))
+
+
+
+    
