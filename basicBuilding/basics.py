@@ -73,3 +73,15 @@ def find_closest(n,m):
     return closest
 
 print(find_closest(13,4))
+
+
+# Opposite FaceOfDice
+
+def getOppFace(n):
+    
+    ans = 7 -n
+    return ans
+
+print(getOppFace(1))
+print(getOppFace(4))
+
