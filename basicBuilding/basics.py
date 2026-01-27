@@ -121,3 +121,12 @@ while (n > 0):
     print(rev)
     n = n // 10
     print(n)    
+    
+    def reverseDigits(n, rev=0):
+        if n == 0:
+            return rev
+        return reverseDigits(n // 10, rev * 10 + n % 10)
+    
+print(reverseDigits(3456))
+       
+            
