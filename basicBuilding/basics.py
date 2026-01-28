@@ -129,4 +129,18 @@ while (n > 0):
     
 print(reverseDigits(3456))
        
-            
+#Prime testing
+
+def get_prime(n):
+    if n <= 1:
+        return False
+    
+    for i in range(2,n):
+        if n % i == 0:
+            return False
+    
+    return True
+
+print("true") if get_prime(11) else print("false")
+
+print("true") if get_prime(12) else print("false")
