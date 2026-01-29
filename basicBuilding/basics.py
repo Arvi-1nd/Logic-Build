@@ -144,3 +144,28 @@ def get_prime(n):
 print("true") if get_prime(11) else print("false")
 
 print("true") if get_prime(12) else print("false")
+
+#To check if a number is a power of another number
+
+
+def powNum(x,y):
+    if x ==1:
+        return y ==1 
+    
+    pow = 1
+    while pow < y:
+        pow *= x
+        
+    return pow == y
+
+print(powNum(5,25))
+
+#using math
+import math
+
+def getPower(x,y):
+    result = math.log(y) / math.log(x)
+    
+    return result == math.floor(result)
+
+print(getPower(7,49))
