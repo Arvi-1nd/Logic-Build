@@ -169,3 +169,13 @@ def getPower(x,y):
     return result == math.floor(result)
 
 print(getPower(7,49))
+
+# Distance between two points
+import math
+
+x1,x2 = 5,6
+y1,y2 = 9,8
+
+dis_res = math.floor(math.sqrt((x2-x1)**2 + (y2-y1)**2))
+
+print(dis_res)
