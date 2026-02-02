@@ -179,3 +179,18 @@ y1,y2 = 9,8
 dis_res = math.floor(math.sqrt((x2-x1)**2 + (y2-y1)**2))
 
 print(dis_res)
+
+# valid triangle
+
+def checktriangle(a,b,c):
+    if ((a + b) <= c) or ((a + c) <= b) or ((b + c) <= a):
+        return False
+    else:
+        return True
+    
+a,b,c = 5,7,9    
+    
+if checktriangle(a,b,c):
+    print("valid")
+else:
+    print("invalid")
