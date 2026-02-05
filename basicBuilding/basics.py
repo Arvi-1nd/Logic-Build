@@ -222,4 +222,12 @@ if __name__ == "__main__":
          print("Rectangles Overlap")
      else:
         print("Rectangles Dont Overlap")
-    
+
+# Factorial of a given number
+
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n-1)
+
+print(factorial(5))
