@@ -231,3 +231,18 @@ def factorial(n):
     return n * factorial(n-1)
 
 print(factorial(5))
+
+
+# Count pairs
+
+def countingpairs(n):
+    count = 0
+    for i in range(1,n+1):
+        for j in range(n+1):
+            if i**3 + j**3 == n:
+               count += 1
+    return count
+
+n = 9
+
+print(countingpairs(n))
