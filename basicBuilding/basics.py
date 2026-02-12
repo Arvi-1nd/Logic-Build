@@ -246,3 +246,17 @@ def countingpairs(n):
 n = 9
 
 print(countingpairs(n))
+
+# finding the gcd
+
+def findgcd(a,b):
+    result = min(a,b)
+    
+    while result > 0:
+        if a % result == 0 and b % result == 0:
+            break
+        result -1
+        
+    return result
+
+print(findgcd(20,28))
